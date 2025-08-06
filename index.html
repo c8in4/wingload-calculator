@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Wingload Calculator</title>
+</head>
+
+<body class="dark">
+    <header>
+        <h1>Wingload Calculator</h1>
+    </header>
+
+    <main>
+
+        <form novalidate action="/" method="get">
+            <label for="isLbs">
+                <span>Weight Unit:</span>
+                <div class="switch">
+                    <input type="checkbox" name="isLbs" id="isLbs">
+                    <span class="slider round"></span>
+                </div>
+            </label>
+            <label for="exitWeight">
+                <span>Exit Weight:</span>
+                <input id="exitWeight" type="number" required min="1">
+            </label>
+            <label for="canopySize">
+                <span>Canopy Size (sqft):</span>
+                <input id="canopySize" type="number" required min="1" step="1">
+            </label>
+            <button type="submit">Calculate</button>
+            <fieldset>
+                <legend>Wingload:</legend>
+                <output id="wingload">
+                </output>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        made by c8in4
+    </footer>
+</body>
+
+</html>
